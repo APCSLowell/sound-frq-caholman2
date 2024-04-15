@@ -20,7 +20,9 @@ public class Sound
       if(samples[i] > limit){
         samples[i] = limit;
         result++;
-      }
+      } else if (samples[i] < 0-limit){
+        samples[i] = 0-limit;
+        result++;
     }
     return result;
   }
